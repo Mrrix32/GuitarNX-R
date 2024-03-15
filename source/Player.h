@@ -402,8 +402,8 @@ public:
 							}
 
 
-							// add particles only on sustain notes
-							if (toucheActivated[j] && (note->getHScale(ZOOM) > 0.7)) {
+							// add particles
+							if (toucheActivated[j]) {
 
 								float delta = timeNow - timeLast;
 								for (int i = 0; i < delta / 20000; i++) {
